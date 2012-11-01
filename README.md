@@ -1,4 +1,4 @@
-Fast payment integration
+Payfast payment integration
 =======================
 
 Introduction
