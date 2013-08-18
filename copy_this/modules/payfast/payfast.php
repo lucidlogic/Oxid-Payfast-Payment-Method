@@ -117,9 +117,7 @@ class payfast extends oxOrder
         $myConfig = $this->getConfig();
         // order number setter in finalize if cfq opt true
         if ( !$this->oxorder__oxordernr->value ) {
-            if ( $myConfig->getConfigParam( 'blStoreOrderNrInFinalize' ) ) {
-                $this->_setNumber();
-            }
+            $this->_setNumber();
         } else {
             oxNew( 'oxCounter' )->update( $this->_getCounterIdent(), $this->oxorder__oxordernr->value );
         }
